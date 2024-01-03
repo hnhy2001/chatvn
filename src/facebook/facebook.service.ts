@@ -83,4 +83,8 @@ export class FacebookService {
       return "err"
     })
   }
+
+  async getAllMessager(){
+    return await axios.get("https://graph.facebook.com/v18.0/t_1982463875482520/messages?fields=message,from,to&access_token=EAAKtz8GDZChoBOZBG3EZBTC3auavjAuapIlgRjWS409dR7CraGJNZAsPorW61SxtHbPjoHZCu1BaxSMZARoOeH9D8vTMettXxCZBSuTLSm2BnaWKzrIUoSIJTWwlZBB3xHK3SHvelE6m7o2OZATP4IrWZAANi4hF7fCQASqcSL9CUZCTuQC7Q0ZB444zbLvDUjF0oGIjzYRXA0dcQLMPZAVMZD")
+  }
 }

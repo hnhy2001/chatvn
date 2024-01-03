@@ -37,4 +37,10 @@ export class FacebookController {
   send(@Param('mess') mess: string){
     return this.facebookService.send(mess);
   }
+
+  @Get('mess')
+  async getAllMessager(){
+    const data = await this.facebookService.getAllMessager()
+    return data.data;
+  }
 }
